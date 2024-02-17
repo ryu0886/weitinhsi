@@ -2,7 +2,7 @@
 
 The minidbg is a monitoring tool for Windows OS to record the application's events.
 By default minidbg will generate logs under temp folder such logs below.
-The caller need specify the Windows sample file into batch file "sample.bat".
+The caller needs to specify the Windows sample file into the batch file named "sample.bat".
 
 ```
 0x023b952d,15192,14952,process,14328,C:\Windows\System32\cmd.exe,cmd.exe /C c:\myapp\sample.bat,0000006DD8E7C000,0000000000000000
