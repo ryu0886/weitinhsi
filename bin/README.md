@@ -13,3 +13,7 @@ The caller needs to specify the Windows sample file into the batch file named "s
 0x023b9533,15192,14952,api,ntdll.dll!NtCreateEvent(0x0,0x1f0003,,0x0,0x0)=0x00007FFF6C9EFC60 from 0x00007FFF6C9FD43C (ntdll.dll+0xad43c)
 0x023b9535,15192,14952,api,ntdll.dll!NtCreateEvent(0x0,0x1f0003,,0x0,0x0)=0x00007FFF6C9EFC60 from 0x00007FFF6CA1A0B9 (ntdll.dll+0xca0b9)
 ```
+
+```
+b97dc40c67e156e1edfb5ade61296b629533a09784a30d5eba9b89b9fc759acd  minidbg.exe
+```
