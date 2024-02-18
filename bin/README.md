@@ -27,5 +27,5 @@ With base64 encoding:
 
 The checksum for the minidbg.
 ```
-30a241252b6efff11f84f45dd45b44f06b8c55edf69767f73f1f8d82b3540103  minidbg.exe
+cd83b51129703d1ce67471d395297ea47089f8b6e867d73bf7379972d4567d25  minidbg.exe
 ```
