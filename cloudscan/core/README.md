@@ -31,3 +31,10 @@ The checksum for the minidbg.
 ```
 cd83b51129703d1ce67471d395297ea47089f8b6e867d73bf7379972d4567d25  minidbg.exe
 ```
+
+If the minidbg has the dependency issue, try to install VC redistributable package.
+```
+sha256sum vc_redist.x*
+015edd4e5d36e053b23a01adb77a2b12444d3fb6eccefe23e3a8cd6388616a16  vc_redist.x64.exe
+e830c313aa99656748f9d2ed582c28101eaaf75f5377e3fb104c761bf3f808b2  vc_redist.x86.exe
+```
