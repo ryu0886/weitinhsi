@@ -26,7 +26,14 @@ Shift+F10
 OOBE\BYPASSNRO
 ```
 It takes me around 60 minutes to install a nested QEMU Win11 under a GCP instance.
-After the installation, we can launch the machine the following way:
+
+Remember to disable the hibernation mode and shutdown the machine.
+```
+Run a cmd.exe with the Administrator permission
+powercfg -h off
+```
+
+After the installation, we can launch the machine the following way by creating a snapshot "vm01.qcow2" and run "qemu-system-x86_64"
 ```
 qemu-img create -b win11v23h2jan.qcow2 -F qcow2 -f qcow2 -o lazy_refcounts vm01.qcow2
 sudo qemu-system-x86_64 -enable-kvm --nographic -m 8196 -smp 4 -name vm01 -nic user,id=localnet,net=192.168.200.0/24,dhcpstart=192.168.200.11,hostfwd=tcp::33389-:3389,hostfwd=tcp::44443-:443 -vnc 0.0.0.0:1 -monitor telnet:127.0.0.1:50001,server,nowait vm01.qcow2 -D ./vm01.log
@@ -34,3 +41,8 @@ sudo qemu-system-x86_64 -enable-kvm --nographic -m 8196 -smp 4 -name vm01 -nic u
 
 This is the example base image:
 https://ice-eu-89714.icedrive.io/download?p=WWS9WuGnUYr0BGyDIG1Co14XbWoeonbXwFzOaf.rPE315XE2vauL_Mw39gZIl47uRa8iyFUHVghXQKAW4SKdJegyuQZQcF9pD5q0K6gq46AGWlzV5STu05OZkwDwCbjvRdsbDBSW93_qlHMmTnwb_5SnwTN_INQsOfYapESMo9.xmyInsNLdQ10zAbXQLAYxloKlotPTKezFzWWUYlbTJw--
+
+```
+md5sum win11v23h2jan.qcow2
+75c468daee191fa48b2a45fb9d4b82ea  win11v23h2jan.qcow2
+```
