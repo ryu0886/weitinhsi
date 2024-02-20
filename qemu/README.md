@@ -36,7 +36,7 @@ powercfg -h off
 After the installation, we can launch the machine the following way by creating a snapshot "vm01.qcow2" and run "qemu-system-x86_64"
 ```
 qemu-img create -b win11v23h2jan.qcow2 -F qcow2 -f qcow2 -o lazy_refcounts vm01.qcow2
-sudo qemu-system-x86_64 -enable-kvm --nographic -m 8196 -smp 4 -name vm01 -nic user,id=localnet,net=192.168.200.0/24,dhcpstart=192.168.200.11,hostfwd=tcp::33389-:3389,hostfwd=tcp::44443-:443 -vnc 0.0.0.0:1 -monitor telnet:127.0.0.1:50001,server,nowait vm01.qcow2 -D ./vm01.log
+sudo qemu-system-x86_64 -enable-kvm --nographic -m 8196 -smp 4 -name vm01 -nic user,id=localnet,net=192.168.200.0/24,dhcpstart=192.168.200.11,hostfwd=tcp::3389-:3389,hostfwd=tcp::443-:443 -vnc 0.0.0.0:1 -monitor telnet:127.0.0.1:50001,server,nowait vm01.qcow2 -D ./vm01.log
 ```
 
 This is the example base image:
