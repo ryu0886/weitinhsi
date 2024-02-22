@@ -1,5 +1,7 @@
 # weitinhsi
 
+## Introduction
+
 The weitinhsi is a system to automatically generate events for the Windows sample such as PE file, MS Word, batch files and so on.
 Instead of patching the Windows API, the core module "minidbg.exe" simulates the debugger to install break points and monitors certain APIs. The API list can be defined by the configuration.
 
@@ -33,3 +35,7 @@ api:ntdll.dll!NtAlpcConnectPort,p$$$u$$$o$$$p$$$x$$$p$$$p$$$p$$$p$$$p$$$p$$$,3
 api:ntdll.dll!LdrLoadDll,x$$$x$$$u$$$p$$$,3
 
 ```
+
+## Requirements
+
+The weitinhsi needs run under x64 Windows OS. Either create an Windows instance in GCP or create a Debian 12 instance and run a nested [QEMU Windows VM](./qemu/README.md) in GCP.
