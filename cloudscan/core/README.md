@@ -29,7 +29,7 @@ After decoding to the original string:
 
 The checksum for the minidbg.
 ```
-37234bf307addbb3197e2b49ac9cfaa1ea7267c456544ded2a3e19e32dee69fb  minidbg.exe
+ec2332325ff1545060125a60e9f32a9baf8a9841769960d203b82ad175c63af5  minidbg.exe
 ```
 
 If the minidbg has the dependency issue, try to install VC redistributable package.
