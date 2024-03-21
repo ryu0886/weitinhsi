@@ -1,6 +1,6 @@
-# [minidbg](https://github.com/ryu0886/minidbg)
+# minidbg
 
-The minidbg is a monitoring tool for Windows OS to record the application's events.
+The [minidbg](https://github.com/ryu0886/minidbg) is a monitoring tool for Windows OS to record the application's events.
 The startup point is the minidbg's path but suffixed with ".bat" instead of ".exe".
 For example, the caller needs to specify the Windows sample path into the batch file named "minidbg.bat".
 The minidbg will generate logs under the same folder. For example, the log file name is "minidbg.log".
