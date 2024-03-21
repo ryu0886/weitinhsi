@@ -1,4 +1,4 @@
-# minidbg
+# [minidbg](https://github.com/ryu0886/minidbg)
 
 The minidbg is a monitoring tool for Windows OS to record the application's events.
 The startup point is the minidbg's path but suffixed with ".bat" instead of ".exe".
